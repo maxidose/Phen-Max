@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Person 1 - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="person1.html">@Macqssy</a></li>
+            <li><a href="person2.html">@Phenywiseee</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <h1>Jayphencel Palting</h1>
+        <div class="work-gallery">
+            <div class="work-item" onclick="toggleExpand('aboutMe')">
+                <img src="atephen.jpg" alt="About Me">
+                <h3>About Me</h3>
+                <p>Click to learn more about me.</p>
+                <div id="aboutMe" class="expandable-content">
+                    <p>Hi! I’m Jayphencel Unida Palting, but you can call me by my nickname “ phen” or “phencel”.  Born on March 06, 2003 in Manuel A. Roxas Hospital. I’m from Rang-Ayan Roxas Isabela.  My parents are Jessie Palting and Carmina Palting.</p>
+                </div>
+            </div>
+            <div class="work-item" onclick="toggleExpand('contacts')">
+                <img src="contact.jpg" alt="Contacts">
+                <h3>Contacts</h3>
+                <p>Click to view my contact information.</p>
+                <div id="contacts" class="expandable-content">
+                    <p>Phone Number: 09554180322</p>
+                    <p>Email: <a href="mailto:Phencelpalting@gmail.com">Phencelpalting@gmail.com</a></p>
+                    <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100009640807800" target="_blank">Phencel Palting</a></p>
+                    <p>Instagram: <a href="https://www.instagram.com/phenywiseee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">@Phenywiseee</a></p>
+                    <p>TikTok: <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40sodaaabaseee%3F_t%3D8pKdemgjZma%26_r%3D1%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2_-SGidg_G3DDDJ9vj-OQL1QXb_rEaPNnjxfkTF74668nfxtBWMR-k-i4_aem_NoGhMrbaxTdMebNPyaNlpA&h=AT1rBTpjh9h37s407Wn3rJrXW8z3xBmXA3AHwlQgjaZZtiXfmgdVkuuM99bTQomkNL9vAocoVff0I2R2-ZxujWg2zVIvRYo_p8xT4Pdvd4dFN98SR0700Btpw9hAIzge_ppK1Q" target="_blank">Phenywiseee</a></p>
+                </div>
+            </div>
+            <div class="work-item" onclick="toggleExpand('personalInfo')">
+                <img src="atephenny.jpg" alt="Personal Info ">
+                <h3>Personal Info (Summary)</h3>
+                <p>Click to view my personal information.</p>
+                <div id="personalInfo" class="expandable-content">
+                    <p>Name: Jayphencel Unida Palting</p>
+                    <p>Address: Rang-Ayan, Roxas, Isabela</p>
+                    <p>Age: 21 Years Old</p>
+                    <p>Currently Studying at Isabela State University - Roxas Campus (Bachelor of Science in Information Technology - Under Graduate) </p>
+                    
+                </div>
+            </div>
+
+            <!-- New Video Section -->
+            <div class="work-item video-item">
+                <video controls>
+                    <source src="atephenvid.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <h3>Meet Jayphencel Palting</h3>
+                <p>Get to know more about my journey and passions in this short video.</p>
+            </div>
+            
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2024 Jayphencel Palting. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/profile.php?id=100009640807800" target="_blank">Facebook</a> |
+                <a href="https://www.instagram.com/phenywiseee?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">Instagram</a> |
+                <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.tiktok.com%2F%40sodaaabaseee%3F_t%3D8pKdemgjZma%26_r%3D1%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2_-SGidg_G3DDDJ9vj-OQL1QXb_rEaPNnjxfkTF74668nfxtBWMR-k-i4_aem_NoGhMrbaxTdMebNPyaNlpA&h=AT1rBTpjh9h37s407Wn3rJrXW8z3xBmXA3AHwlQgjaZZtiXfmgdVkuuM99bTQomkNL9vAocoVff0I2R2-ZxujWg2zVIvRYo_p8xT4Pdvd4dFN98SR0700Btpw9hAIzge_ppK1Q" target="_blank">TikTok</a> |
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleExpand(id) {
+            const content = document.getElementById(id);
+            const allContents = document.querySelectorAll('.expandable-content');
+
+            // Close all other expandable contents
+            allContents.forEach((section) => {
+                if (section !== content) {
+                    section.classList.remove('expanded');
+                }
+            });
+
+            // Toggle the selected content
+            content.classList.toggle('expanded');
+        }
+    </script>
+</body>
+</html>
